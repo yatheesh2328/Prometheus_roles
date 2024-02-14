@@ -1,0 +1,17 @@
+  tasks:
+    - name: prometheus_installation
+      apt:
+        name: prometheus
+        state: present
+      become: yes
+      tags:
+        - prometheus
+
+    - name: Enable_and_start_prometheus
+      systemd:
+        name: prometheus
+        state: started
+        enabled: yes
+      become: yes
+      tags:
+        - prometheus
