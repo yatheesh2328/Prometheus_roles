@@ -1,4 +1,5 @@
-  tasks:
+---
+tasks:
     - name: prometheus_installation
       apt:
         name: prometheus
