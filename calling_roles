@@ -1,0 +1,5 @@
+---
+- name: calling_prometheus
+  hosts: all
+  roles:
+    - prometheus_roles
